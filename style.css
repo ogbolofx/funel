@@ -1,0 +1,195 @@
+/* ================================
+   CSS RESET
+================================ */
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/* ================================
+   ROOT DESIGN SYSTEM
+================================ */
+:root {
+  /* Brand */
+  --color-primary: #d04536;        /* CTA / Brand accent */
+  --color-primary-soft: #55858b;   /* Hover / micro-accents */
+  --color-primary-deep: #544154;   /* Headings / emphasis */
+
+  /* Surfaces */
+  --color-surface-main: #d3d7d8;   /* Page background */
+  --color-surface-card: #b0b5b8;   /* Cards / product blocks */
+
+  /* Text */
+  --color-text-main: #2b2b2b;      /* Body text */
+  --color-text-muted: #6b6b6b;
+
+       /* Neutral color */
+  --color-neutral: #f4f4f4;
+  --color-neutral-black: #000000;  /* Borders / dividers */
+  
+        /* base */
+  --color-primary-soft1: #e06b5f;   /* hover */
+  --color-primary-light: #f6d4cf;  /* backgrounds */
+  --color-primary-deep2: #a3362b;   /* emphasis / focus */
+
+
+  /* Radius */
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 47px;
+}
+/* ================================
+   GLOBAL BASE STYLES
+================================ */
+body {
+  font-family: 'Roboto', system-ui, sans-serif;
+  color: var(--color-primary-deep);
+  background: var(--color-surface-main);
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+h1 {
+  font-size: 62px;
+}
+h2 {
+  font-size: 48px;
+}
+h3 {
+  font-size: 24px;
+}
+/* Normalization */
+img {
+  max-width: 100%;
+  display: block;
+}
+p {
+  color: var(--color-text-main);
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+}
+#hero-subheading{
+color: var(--color-primary-deep);
+}
+/*------COMPONENTS--------*/
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 12px 24px;
+  border-radius: var(--radius-sm);
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  width: fit-content;
+}
+
+
+  /* smooth animation */
+  transition:
+  { background-color 0.25s ease, transform 0.15s ease; }
+
+.btn-primary:hover {
+  background-color: var(--color-primary-deep2);
+  color: var(--color-neutral);
+  transform: translateY(-2px);
+}
+
+.btn-primary:focus-visible {
+  outline: 2px solid var(--color-neutral-black);
+  outline-offset: 3px;
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  opacity: 0.9;
+}
+
+
+.btn1, .btn2, .btn3, .btn4 {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 12px 24px;
+  border-radius: var(--radius-sm);
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+ 
+}
+
+/*flexbox arrangement*/
+
+.navbar-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+}
+
+/* Logo */
+.navbar-item2 img {
+  height: 70px;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+nav ul li {
+  margin-left: 24px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+/* Hero Section */
+.flex-item-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 20px;
+}
+
+.flexcontainer-1{
+ display: flex;
+ justify-content: space-around;
+ flex-direction: row;
+ gap: 20px;
+ max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.hero{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+
+
+/*-----FEATURES SECTION------*/
